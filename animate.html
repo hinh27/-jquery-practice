@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var div = $("div");
+                div.animate({left: '100px'}, "slow");
+                div.animate({fontSize: '100px'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Start Animation</button>
+<p>Theo mặc định, tất cả các thành phần HTML có vị trí tĩnh và không thể di chuyển. Để thao tác vị trí, trước tiên hãy nhớ đặt thuộc tính vị trí CSS của phần tử thành tương đối, cố định hoặc tuyệt đối!
+</p>
+<div style="background:#98bf21;height:100px;width:330px;position:absolute;">HELLO</div>
+</body>
+</html>
